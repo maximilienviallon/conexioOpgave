@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+$white: #FFFFFF;
+$lightGray: #F4F4F1;
+$gray: #E2E2E2;
+$darkGray: rgba(0, 0, 0, 0.29);
+$darkBlue: #37495E;
+$green: #209B59;
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1340px;
+    padding: 0 2rem;
+
+    @media only screen and (max-width: $xl) {
+        max-width: 1140px;
+    }
+    
+    @media only screen and (max-width: $lg) {
+        max-width: 960px;
+    }
+
+    @media only screen and (max-width: $md) {
+        max-width: 720px;
+    }
+
+    @media only screen and (max-width: $sm) {
+        max-width: 540px;
+    }
+}
