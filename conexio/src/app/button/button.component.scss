@@ -1,6 +1,7 @@
 @import '/src/styles.scss';
 
 button {
+    cursor: pointer;
     border: none;
     background-color: $green;
     color: $white;
@@ -8,4 +9,5 @@ button {
     border-radius: 8px;
     font-size: 12px;
     text-transform: uppercase;
+    font-weight: bold;
 }
