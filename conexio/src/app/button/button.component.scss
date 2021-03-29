@@ -1,0 +1,11 @@
+@import '/src/styles.scss';
+
+button {
+    border: none;
+    background-color: $green;
+    color: $white;
+    padding: 0.7rem 2.3rem;
+    border-radius: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+}

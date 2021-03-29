@@ -1,0 +1,12 @@
+@import '/src/styles.scss';
+
+.table-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-container {
+    display: flex;
+    align-items: center;
+}
