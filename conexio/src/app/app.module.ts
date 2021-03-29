@@ -7,6 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { TableHeaderComponent } from './table-header/table-header.component';
 import { ButtonComponent } from './button/button.component';
 import { FilterComponent } from './filter/filter.component';
+import { TableComponent } from './table/table.component';
+import { TableCardComponent } from './table-card/table-card.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -14,10 +17,13 @@ import { FilterComponent } from './filter/filter.component';
     HeaderComponent,
     TableHeaderComponent,
     ButtonComponent,
-    FilterComponent
+    FilterComponent,
+    TableComponent,
+    TableCardComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule
   ],
   providers: [],

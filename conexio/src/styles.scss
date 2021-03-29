@@ -48,3 +48,11 @@ body {
         max-width: 540px;
     }
 }
+
+.grid-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr 1fr 1fr;
+    grid-gap: 3rem 2rem;
+    padding: 0.4rem 1rem;
+}
