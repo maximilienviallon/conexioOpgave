@@ -1,5 +1,5 @@
 <app-header></app-header>
 <div class="container">
-  <app-table-header></app-table-header>
-  <app-table></app-table>
+  <app-table-header (search)="search($event)"></app-table-header>
+  <app-table [beers]="filteredBeers" [errorMessage]="errorMessage"></app-table>
 </div>

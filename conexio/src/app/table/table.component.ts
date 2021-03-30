@@ -1,23 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { BeersService, IBeer } from '../beers.service';
+import { Component, Input } from '@angular/core';
+import { IBeer } from '../beers.service';
 
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.scss']
 })
-export class TableComponent implements OnInit {
-  public beers: IBeer[] = undefined;
-  public errorMessage: string = '';
-
-  constructor(private beersService: BeersService) { }
-  
-  public ngOnInit(): void {
-    this.fetchBeer();
-  }
-
-  public async fetchBeer() {
-    this.beers = await this.beersService.getBeers();
-    this.errorMessage = this.beersService.getErrorMessage();
-  }
+export class TableComponent {
+  @Input() beers: IBeer[];
+  @Input() errorMessage: string;
 }
