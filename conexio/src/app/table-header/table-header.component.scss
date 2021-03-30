@@ -13,10 +13,19 @@ h1 {
 }
 
 .row-container {
+    margin-bottom: 16px;
     display: flex;
     align-items: center;
+    @media only screen and (max-width: $md) {
+        justify-content: space-between;
+        width: 100%;
+    }
 }
 
 .item {
     margin-left: 20px;
+
+    @media only screen and (max-width: $md) {
+        margin-left: 0;
+    }
 }
