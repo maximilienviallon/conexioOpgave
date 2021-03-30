@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MobileBeerCardComponent } from './mobile-beer-card/mobile-beer-card.component';
+import { BrandingBannerComponent } from './branding-banner/branding-banner.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MobileBeerCardComponent } from './mobile-beer-card/mobile-beer-card.com
     TableComponent,
     TableCardComponent,
     LoadingSpinnerComponent,
-    MobileBeerCardComponent
+    MobileBeerCardComponent,
+    BrandingBannerComponent
   ],
   imports: [
     BrowserModule,
