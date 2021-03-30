@@ -21,10 +21,12 @@
     <div class="card-padding">
         <div class="row-container">
             <div class="align-center">
-                <span class="abv">{{ beer.abv | number: '1.0-0' }} %</span>
+                <span class="abv">{{ beer.abv | number: '1.0-0' }}</span>
+                <span class="unit">%</span>
             </div>
             <div class="align-center">
-                <span class="ibu">{{ beer.ibu | number: '1.0-0' }} IBU</span>
+                <span class="ibu">{{ beer.ibu | number: '1.0-0' }}</span>
+                <span class="unit">IBU</span>
             </div>
         </div>
     </div>
