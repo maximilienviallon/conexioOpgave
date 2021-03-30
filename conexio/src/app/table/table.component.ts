@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { getLocaleNumberFormat } from '@angular/common';
+import { Component, Input, OnInit } from '@angular/core';
+import axios from 'axios';
+import { HttpClient } from '@angular/common/http';
+import { BaseRouteReuseStrategy } from '@angular/router';
 
 export interface IBeer {
   name: string;
@@ -15,12 +19,25 @@ export interface IBeer {
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
-
+  @Input() beer: IBeer[];
+  public beers: any;
+  
   constructor() { }
-
   ngOnInit(): void {
+    this.beers.getBeer();
   }
-
+  
+  
+  async getBeer() {
+    try {
+      const response = await axios.get('https://conexioaps-beer.azurewebsites.net/index.html');
+      response.headers('Access-Control-Allow-Origin', 'true');
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    
+    }
+  }
   public beerMockData: IBeer[] = [
     {
       name: 'Beer 1',
@@ -31,7 +48,7 @@ export class TableComponent implements OnInit {
       ibu: 2
     },
     {
-      name: 'Beer 2',
+      name: 'yo',
       style: 'Blonde',
       category: 'Category 2',
       brewingHouse: 'C3PO',
