@@ -1,0 +1,27 @@
+@import '/src/styles.scss';
+
+.toggle-container {
+    background: $gray;
+    margin: 0.5rem;
+    border-radius: 8px;
+    display: flex;
+}
+
+img {
+    padding: 0.7rem;
+    font-size: 1.1rem;
+}
+
+.tiles-toggle {
+    border-radius: 8px 0 0 8px;
+    cursor: pointer;
+}
+
+.list-toggle {
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+.active {
+    background: $white;
+}

@@ -14,6 +14,7 @@ import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.compo
 import { ReactiveFormsModule } from '@angular/forms';
 import { MobileBeerCardComponent } from './mobile-beer-card/mobile-beer-card.component';
 import { BrandingBannerComponent } from './branding-banner/branding-banner.component';
+import { ViewToggleComponent } from './view-toggle/view-toggle.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BrandingBannerComponent } from './branding-banner/branding-banner.compo
     TableCardComponent,
     LoadingSpinnerComponent,
     MobileBeerCardComponent,
-    BrandingBannerComponent
+    BrandingBannerComponent,
+    ViewToggleComponent
   ],
   imports: [
     BrowserModule,
