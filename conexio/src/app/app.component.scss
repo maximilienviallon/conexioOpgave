@@ -3,3 +3,24 @@
 :host {
     background-color: $lightGray;
 }
+
+.loading-container, .error-container {
+    display: flex;
+    justify-content: center;
+}
+
+.md-up {
+    display: block;
+
+    @media only screen and (max-width: $md) {
+        display: none;
+    }
+}
+
+.sm-only {
+    display: none;
+    
+    @media only screen and (max-width: $md) {
+        display: block;
+    }
+}

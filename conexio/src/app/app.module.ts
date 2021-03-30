@@ -12,6 +12,7 @@ import { TableCardComponent } from './table-card/table-card.component';
 import { CommonModule } from '@angular/common';
 import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MobileBeerCardComponent } from './mobile-beer-card/mobile-beer-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FilterComponent,
     TableComponent,
     TableCardComponent,
-    LoadingSpinnerComponent
+    LoadingSpinnerComponent,
+    MobileBeerCardComponent
   ],
   imports: [
     BrowserModule,

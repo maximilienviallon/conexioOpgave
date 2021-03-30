@@ -8,5 +8,4 @@ import { IBeer } from '../beers.service';
 })
 export class TableComponent {
   @Input() beers: IBeer[];
-  @Input() errorMessage: string;
 }

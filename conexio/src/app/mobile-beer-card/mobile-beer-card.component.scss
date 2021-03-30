@@ -1,0 +1,60 @@
+@import '/src/styles.scss';
+
+.card {
+    background-color: $white;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-padding {
+    padding: 16px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.name, .style, .category {
+    font-weight: bold;
+    color: $darkBlue;
+}
+
+.brewery {
+    color: $darkBlue;
+}
+
+.row-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.style-container, .category-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.subtitle {
+    margin: 0;
+    color: $darkGray;
+}
+
+hr {
+    color: $darkGray;
+}
+
+.abv, .ibu {
+    font-weight: bold;
+    color: $darkBlue;
+    font-size: 32px;
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}

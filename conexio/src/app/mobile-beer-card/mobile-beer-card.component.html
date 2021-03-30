@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="card-padding">
+        <div class="card-header">
+            <span class="name">{{ beer.name ? beer.name : '-' }}</span>
+            <span class="brewery">{{ beer.breweryName ? beer.breweryName : '-' }}</span>
+        </div>
+
+        <div class="row-container">
+            <div class="style-container">
+                <span class="subtitle">Style</span>
+                <span class="style">{{ beer.styleName ? beer.styleName : '-' }}</span>
+            </div>
+            <div class="category-container">
+                <span class="subtitle">Category</span>
+                <span class="category">{{ beer.categoryName ? beer.categoryName : '-' }}</span>
+            </div>
+        </div>
+    </div>
+
+    <hr/>
+    <div class="card-padding">
+        <div class="row-container">
+            <div class="align-center">
+                <span class="abv">{{ beer.abv | number: '1.0-0' }} %</span>
+            </div>
+            <div class="align-center">
+                <span class="ibu">{{ beer.ibu | number: '1.0-0' }} IBU</span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,26 @@
 <app-header></app-header>
 <div class="container">
   <app-table-header (search)="search($event)"></app-table-header>
-  <app-table [beers]="filteredBeers" [errorMessage]="errorMessage"></app-table>
+
+  <ng-container *ngIf="!beers">
+    <div class="loading-container">
+        <app-loading-spinner></app-loading-spinner>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="beers?.length">
+    <div class="md-up">
+      <app-table [beers]="filteredBeers"></app-table>
+    </div>
+  
+    <div class="sm-only">
+      <app-mobile-beer-card *ngFor="let beer of filteredBeers" [beer]="beer"></app-mobile-beer-card>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="!beers?.length && errorMessage">
+      <div class="error-container">
+          <h3>{{ errorMessage }}</h3>
+      </div>
+  </ng-container>
 </div>
