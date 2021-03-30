@@ -1,12 +1,26 @@
-<div class="grid-container">
-    <span class="category">Navn</span>
-    <span class="category">Stil</span>
-    <span class="category">Kategori</span>
-    <span class="category">Bryghus</span>
-    <span class="category">ABV</span>
-    <span class="category">IBU</span>
-</div>
+<ng-container *ngIf="!beers">
+    <div class="loading-container">
+        <app-loading-spinner></app-loading-spinner>
+    </div>
+</ng-container>
 
-<ng-container *ngFor="let beer of beers">
-    <app-table-card [beer]="beer"></app-table-card>
+<ng-container *ngIf="beers?.length">
+    <div class="grid-container">
+        <span class="category">Navn</span>
+        <span class="category">Stil</span>
+        <span class="category">Kategori</span>
+        <span class="category">Bryghus</span>
+        <span class="category">ABV</span>
+        <span class="category">IBU</span>
+    </div>
+
+    <ng-container *ngFor="let beer of beers">
+        <app-table-card [beer]="beer"></app-table-card>
+    </ng-container>
+</ng-container>
+
+<ng-container *ngIf="!beers?.length && errorMessage">
+    <div class="error-container">
+        <h3>{{ errorMessage }}</h3>
+    </div>
 </ng-container>

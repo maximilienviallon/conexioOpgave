@@ -4,3 +4,8 @@
     color: $darkBlue;
     font-weight: bold;
 }
+
+.loading-container, .error-container {
+    display: flex;
+    justify-content: center;
+}

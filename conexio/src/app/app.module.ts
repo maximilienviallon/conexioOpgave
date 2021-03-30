@@ -10,7 +10,7 @@ import { FilterComponent } from './filter/filter.component';
 import { TableComponent } from './table/table.component';
 import { TableCardComponent } from './table-card/table-card.component';
 import { CommonModule } from '@angular/common';
-import { beerFilterPipe } from './table-card/table-card-filter.pipe';
+import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { beerFilterPipe } from './table-card/table-card-filter.pipe';
     FilterComponent,
     TableComponent,
     TableCardComponent,
-    beerFilterPipe
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,8 @@
 {
-    "/api/*": {
-      "target": "http://localhost:4200",
-      "secure": false,
-      "logLevel": "debug",
-      "changeOrigin": true,
-      "Access-Control-Allow-Origin": "*",
-      "crossorigin": true
-    }
+  "/api/*": {
+    "target": "https://conexioaps-beer.azurewebsites.net/index.html",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
   }
+}
